@@ -1,0 +1,96 @@
+{% extends 'app/base.html' %}
+{% load static  %}
+
+{% block title %} Home {% endblock %}
+{% block banner-slider %}
+
+<div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img src="{% static 'images/banner/b1.jpg' %}" class="d-block w-100" alt="...">
+      </div>
+      <div class="carousel-item">
+        <img src="{% static 'images/banner/b2.jpg' %}" class="d-block w-100" alt="...">
+      </div>
+      <div class="carousel-item">
+        <img src="{% static 'images/banner/b3.jpg' %}" class="d-block w-100" alt="...">
+      </div>
+      <div class="carousel-item">
+        <img src="{% static 'images/banner/b4.jpg' %}" class="d-block w-100" alt="...">
+      </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+  </div>
+{% endblock %}
+
+{% block information %} 
+
+<div class="container ">
+    <div class="text-white bg-success p-5 boder-bottom text-center shadow">
+        <p class="h1">Products</p>
+        <small class="fs-5">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Consectetur cupiditate ad quod rerum aperiam dolorem laborum atque debitis repellendus, quo magni omnis amet tempore blanditiis magnam repudiandae vero? Necessitatibus, dolorum.
+
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Laboriosam dolorum harum possimus aspernatur et ipsam mollitia, quos fuga porro illo ad, cumque iure officiis error suscipit dolores sit hic expedita.
+        </small>
+    </div>
+
+</div>
+{% endblock %}
+
+{% block navbarblock %}
+{% load static %}
+
+<div class="container">
+  <br>
+  <h2>Our Products</h2>
+  <br><br>
+  <div class="product-container">
+    <div class="container row  ">
+
+      <div  class="bg1">
+      <a  style=" display: block ;" class="image" href="{% url 'category' 'GH'  %}"><img style="display: block;" src="{% static 'images/product/buffalo-ghee.png'%}" alt="">Ghee</a>
+      </div>
+    </div>
+    
+    <div class="container row  ">
+  
+      <div class="bg2" >
+      <a  style=" display: block ;" class="image" href="{% url 'category' 'CR'  %}"><img style="display: block;" src="{% static 'images/product/curd-premium.png'%}" alt="">Curd</a></div>
+    </div>
+    <div class="container row ">
+  
+      <div class="bg3">
+      <a  style=" display: block ;" class="image" href="{% url 'category' 'IC'  %}"><img style="display: block;" src="{% static 'images/product/kulfi.png'%}" alt="">kulfi</a>
+      </div>
+    </div>
+    <div class="container row ">
+  
+      <div  class="bg1">
+      <a  style=" display: block ;" class="image" href="{% url 'category' 'MS'  %}"><img style="display: block;" src="{% static 'images/product/milk-shake-vanilla.png'%}" alt="">MilkShake</a>
+      </div>
+    </div>
+    <div class="container row ">
+  
+      <div  class="bg2">
+      <a  style="display: block ;" class="image" href="{% url 'category' 'CZ'  %}"><img style="display: block;" src="{% static 'images/product/mozzarellacheese.png'%}" alt="">mozzarellacheese</a>
+      </div>
+    </div>
+    <div class="container row ">
+  
+      <div class="bg3" >
+      <a  style=" display: block ;" class="image" href="{% url 'category' 'LS'  %}"><img style="display: block;" src="{% static 'images/product/sabja.png'%}" alt="">Lassi</a>
+      </div>
+    </div>
+    
+  </div>
+
+  <br><br>
+</div>
+{% endblock %}

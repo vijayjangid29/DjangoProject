@@ -1,0 +1,57 @@
+{% extends 'app/base.html' %}
+{% load static  %}
+
+{% block title %} About {% endblock %}
+{% block banner-slider %}
+
+<div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img src="{% static 'images/banner/b1.jpg' %}" class="d-block w-100" alt="...">
+      </div>
+      <div class="carousel-item">
+        <img src="{% static 'images/banner/b2.jpg' %}" class="d-block w-100" alt="...">
+      </div>
+      <div class="carousel-item">
+        <img src="{% static 'images/banner/b3.jpg' %}" class="d-block w-100" alt="...">
+      </div>
+      <div class="carousel-item">
+        <img src="{% static 'images/banner/b4.jpg' %}" class="d-block w-100" alt="...">
+      </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+  </div>
+{% endblock %}
+
+{% block information %}
+<div class="container mt-3">
+    <br>
+    <h2 class="text-center">About Us</h2>
+    <br>
+    <div class="row container">
+        <p class="fs-4 text-center">
+            This is public limited company having its registed and corporate office at pune city of maharastra state bank of india.
+            The company was incoporated  in the year    2018 and production commenced in 2010. This is one of the fastest growing public listed companies in pune.
+        </p>
+    </div>
+ <br>
+    <br>
+    <h2 class="text-center">Mission</h2>
+    <br>
+    <div class="row container">
+        <p class="fs-4 text-center">
+            To Deliver Goodness by Safe, Hygienic & Quality Dairy Products and Ingredients with International Standards.
+            we are dedicated to crafting wholesome dairy products that enrich lives and foster healthier communities. Our mission is driven by a steadfast commitment to excellence, sustainability, and customer satisfaction.
+
+        </p>
+    </div>
+ </div>
+ <br><br>
+{% endblock %}
